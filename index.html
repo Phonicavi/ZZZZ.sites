@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <link type="image/x-icon" rel="shortcut icon" href="./img/sjtu.png" />
+    <meta charset="utf-8" />
+	<title> 数据挖掘技术(EE359) 期末作业展示 </title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />    
+    
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/bootstrap-responsive.min.css" rel="stylesheet" />
+    
+    
+    <link href="./css/font-awesome.css" rel="stylesheet" />
+    
+    <link href="./css/adminia.css" rel="stylesheet" /> 
+    <link href="./css/adminia-responsive.css" rel="stylesheet" /> 
+    
+    <link href="./css/pages/dashboard.css" rel="stylesheet" /> 
+    
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+
+<body>
+	
+<div class="navbar navbar-fixed-top">
+	
+	<div class="navbar-inner">
+		
+		<div class="container">
+			
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> 
+				<span class="icon-bar"></span> 
+				<span class="icon-bar"></span> 
+				<span class="icon-bar"></span> 				
+			</a>
+			
+			<a class="brand" href="./"> DataMining (EE359) </a>
+			
+		</div> <!-- /container -->
+		
+	</div> <!-- /navbar-inner -->
+	
+</div> <!-- /navbar -->
+
+
+<div id="content">
+	
+	<div class="container">
+		
+		<div class="row">
+			
+			<div class="span3">
+				
+				<div class="account-container">
+				
+					<div class="account-avatar">
+						<img src="./img/github.png" alt="" class="thumbnail" />
+					</div> <!-- /account-avatar -->
+				
+					<div class="account-details">
+					
+						<span class="account-name"> ZZZZ - 股票预测 </span>
+						
+						<span class="account-role"> SJTU@DataMining <a href="https://github.com/Phonicavi/ZZZZ">Github</a></span>
+						
+						<span class="account-actions">
+							<a href="https://github.com/Phonicavi">Phonicavi</a> |
+							
+							<a href="https://github.com/lawinse"> lawinse</a> |
+							
+							<a href="https://github.com/Slimpid"> Slimpid</a>
+						</span>
+					
+					</div> <!-- /account-details -->
+				
+				</div> <!-- /account-container -->
+				
+				<hr />
+				
+				<ul id="main-nav" class="nav nav-tabs nav-stacked">
+					
+					<li class="active">
+						<a href="./">
+							<i class="icon-home"></i>
+							回测结果 		
+						</a>
+					</li>
+					
+					<li>
+						<a href="./charts.html">
+							<i class="icon-signal"></i>
+							指标分析	
+						</a>
+					</li>
+
+					<li>
+						<a href="./faq.html">
+							<i class="icon-pushpin"></i>
+							FAQ	
+						</a>
+					</li>
+					
+				</ul>	
+				
+				<hr />
+				
+				<div class="sidebar-extra">
+					<p><a href="http://quotes.money.163.com/stock">所有数据来自网易财经</a>
+					<br>
+					<a href="http://github.com/Phonicavi/ZZZZ">查看源码点击进入Github</a></p>
+				</div> <!-- .sidebar-extra -->
+				
+				<br />
+		
+			</div> <!-- /span3 -->
+			
+			
+			
+			<div class="span9">
+				
+				<h1 class="page-title">
+					<i class="icon-home"></i>
+					回测结果	[点击查看]				
+				</h1>
+
+				<div class="stat-container">
+										
+					<div class="stat-holder">						
+						<div class="stat">							
+							<span>1 days</span>							
+							<a href="./public/files/res_1day.csv.xlsx" title="预测未来1天价格涨跌">interval=1</a>
+
+						</div> <!-- /stat -->						
+					</div> <!-- /stat-holder -->
+					
+					<div class="stat-holder">						
+						<div class="stat">							
+							<span>10 days</span>							
+							<a href="./public/files/res_10day.csv.xlsx" title="预测未来10天价格涨跌">interval=10</a>
+
+						</div> <!-- /stat -->						
+					</div> <!-- /stat-holder -->
+					
+					<div class="stat-holder">						
+						<div class="stat">							
+							<span>15 days</span>							
+							<a href="./public/files/res_15day.csv.xlsx" title="预测未来15天价格涨跌">interval=15</a>	
+
+						</div> <!-- /stat -->						
+					</div> <!-- /stat-holder -->
+					
+					<div class="stat-holder">						
+						<div class="stat">							
+							<span>30 days</span>							
+							<a href="./public/files/res_30day.csv.xlsx" title="预测未来30天价格涨跌">interval=30</a>
+
+						</div> <!-- /stat -->						
+					</div> <!-- /stat-holder -->
+										
+					<div class="stat-holder">						
+						<div class="stat">							
+							<span>Random</span>							
+							<a href="./public/files/res_30day(rand).csv.xlsx" title="以90%的概率随机猜对未来30天价格涨跌 和左边进行对比">90%correct-interval=30</a>
+
+						</div> <!-- /stat -->						
+					</div> <!-- /stat-holder -->
+										
+				</div> <!-- /stat-container -->
+
+
+				<div class="stat-container">
+
+					<div class="stat-holder">						
+						<div class="stat">							
+							<span>交大昂立-600530</span>							
+							<a href="./public/files/Selected-Stock600530.xlsx" title="预测未来1, 10, 15, 30天价格涨跌 比较'交大昂立-600530'的收益情况">interval=1, 10, 15, 30</a>
+
+						</div> <!-- /stat -->						
+					</div> <!-- /stat-holder -->
+
+				</div> <!-- /stat-container -->
+
+
+				<div class="stat-container">
+
+					<div class="stat-holder">						
+						<div class="stat">							
+							<span>Top 15</span>							
+							<a href="./public/files/Selected-Stock10.xlsx" title="预测未来10天价格涨跌 挑选出overROR最高的15支股票">interval=10</a>
+
+						</div> <!-- /stat -->						
+					</div> <!-- /stat-holder -->
+
+					<div class="stat-holder">						
+						<div class="stat">							
+							<span>Top 15</span>							
+							<a href="./public/files/Selected-Stock15.xlsx" title="预测未来15天价格涨跌 挑选出overROR最高的15支股票">interval=15</a>
+
+						</div> <!-- /stat -->						
+					</div> <!-- /stat-holder -->
+					
+					<div class="stat-holder">						
+						<div class="stat">							
+							<span>Top 15</span>							
+							<a href="./public/files/Selected-Stock30.xlsx" title="预测未来30天价格涨跌 挑选出overROR最高的15支股票">interval=30</a>
+
+						</div> <!-- /stat -->						
+					</div> <!-- /stat-holder -->
+					
+				</div> <!-- /stat-container -->
+
+
+				<div class="widget">
+										
+					<div class="widget-header">
+						<i class="icon-signal"></i>
+						<h3>Typical&nbsp; <i>交大昂立-600530</i></h3> 
+					</div> <!-- /widget-header -->
+														
+					<div class="widget-content">
+					<p><i>&nbsp; 股价变动 - price </i></p>
+						<div id="line-chart-price" class="chart-holder"></div> <!-- /line-chart -->				
+					</div> <!-- /widget-content -->
+
+					<div class="widget-content">		
+					<p><i>&nbsp; “上帝投资者”Knowing Future, Random Forest, Linear Discriminant Analysis - PV </i></p>
+						<div id="line-chart-PV" class="chart-holder"></div> <!-- /line-chart -->				
+					</div> <!-- /widget-content -->
+					
+				</div> <!-- /widget -->
+
+				
+				
+				
+				<div class="widget widget-table">
+
+					<div class="widget-header">
+						<i class="icon-th-list"></i>
+						<h3>Top15</h3>
+					</div>
+					<dir class="widget-content">
+						<p>&nbsp;&nbsp;&nbsp;&nbsp; <i>interval=15, Random Forest, Online: 选出回测表现具有代表性的15支股票 
+						// ROR: rate of return
+						</i> </p>
+					</dir>
+					<div class="widget-content">
+						<table class="table table-striped table-bordered">
+							<thead>
+								<tr>
+									<th>#code</th>
+									<th>Predict ROR</th>
+									<th>Real ROR</th>
+									<th>Over ROR</th>
+									<th>f1-score</th>
+									<th>accuracy</th>
+									<th>total days</th>
+								</tr>
+							</thead>
+							
+							<tbody>
+								<tr>
+									<td>600305</td>
+									<td>395.08</td>
+									<td>294.57</td>
+									<td>1.3412</td>
+									<td>0.91</td>
+									<td>0.89</td>
+									<td>699</td>
+								</tr>
+								<tr>
+									<td>600345</td>
+									<td>522.15</td>
+									<td>412.84</td>
+									<td>1.2648</td>
+									<td>0.87</td>
+									<td>0.85</td>
+									<td>700</td>
+								</tr>
+								<tr>
+									<td>600466</td>
+									<td>642.40</td>
+									<td>642.40</td>
+									<td>1.0000</td>
+									<td>1.00</td>
+									<td>1.00</td>
+									<td>558</td>
+								</tr>
+								<tr>
+									<td>600678</td>
+									<td>1086.62</td>
+									<td>1086.89</td>
+									<td>0.9997</td>
+									<td>0.87</td>
+									<td>0.85</td>
+									<td>600</td>
+								</tr>
+								<tr>
+									<td>600868</td>
+									<td>773.69</td>
+									<td>774.18</td>
+									<td>0.9994</td>
+									<td>0.96</td>
+									<td>0.96</td>
+									<td>680</td>
+								</tr>
+								<tr>
+									<td>601268</td>
+									<td>18.88</td>
+									<td>18.89</td>
+									<td>0.9992</td>
+									<td>0.89</td>
+									<td>0.92</td>
+									<td>185</td>
+								</tr>
+								<tr>
+									<td>601118</td>
+									<td>506.13</td>
+									<td>506.80</td>
+									<td>0.9987</td>
+									<td>0.87</td>
+									<td>0.85</td>
+									<td>692</td>
+								</tr>
+								<tr>
+									<td>600662</td>
+									<td>1454.47</td>
+									<td>1594.43</td>
+									<td>0.9122</td>
+									<td>0.94</td>
+									<td>0.91</td>
+									<td>700</td>
+								</tr>
+								<tr>
+									<td>600692</td>
+									<td>590.94</td>
+									<td>647.84</td>
+									<td>0.912</td>
+									<td>0.90</td>
+									<td>0.87</td>
+									<td>699</td>
+								</tr>
+								<tr>
+									<td>600391</td>
+									<td>1180.20</td>
+									<td>1297.94</td>
+									<td>0.909</td>
+									<td>0.88</td>
+									<td>0.87</td>
+									<td>691</td>
+								</tr>
+								<tr>
+									<td>600509</td>
+									<td>262.90</td>
+									<td>327.02</td>
+									<td>0.804</td>
+									<td>0.80</td>
+									<td>0.79</td>
+									<td>695</td>
+								</tr>
+								<tr>
+									<td>600493</td>
+									<td>1497.54</td>
+									<td>1863.53</td>
+									<td>0.804</td>
+									<td>0.92</td>
+									<td>0.89</td>
+									<td>691</td>
+								</tr>
+								<tr>
+									<td>601106</td>
+									<td>1143.62</td>
+									<td>1428.69</td>
+									<td>0.800</td>
+									<td>0.78</td>
+									<td>0.79</td>
+									<td>699</td>
+								</tr>
+								<tr>
+									<td>600826</td>
+									<td>579.82</td>
+									<td>724.41</td>
+									<td>0.800</td>
+									<td>0.87</td>
+									<td>0.83</td>
+									<td>698</td>
+								</tr>
+								<tr>
+									<td>601000</td>
+									<td>552.59</td>
+									<td>817.66</td>
+									<td>0.676</td>
+									<td>0.82</td>
+									<td>0.79</td>
+									<td>625</td>
+								</tr>
+							</tbody>
+						</table>
+					
+					</div> <!-- /widget-content -->
+					
+				</div> <!-- /widget -->
+
+
+
+				
+			</div> <!-- /span9 -->
+			
+			
+		</div> <!-- /row -->
+		
+	</div> <!-- /container -->
+	
+</div> <!-- /content -->
+					
+	
+<div id="footer">
+	
+	<div class="container">				
+		<hr />
+		<p align="center">&copy; 2016 SJTU@DataMining - IEEE.</p>
+	</div> <!-- /container -->
+	
+</div> <!-- /footer -->
+
+
+    
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery-1.7.2.min.js"></script>
+<script src="./js/excanvas.min.js"></script>
+<script src="./js/jquery.flot.js"></script>
+<script src="./js/jquery.flot.pie.js"></script>
+<script src="./js/jquery.flot.orderBars.js"></script>
+<script src="./js/jquery.flot.resize.js"></script>
+
+
+<script src="./js/bootstrap.js"></script>
+<script src="./js/charts/line.price.js"></script>
+<script src="./js/charts/line.PV.js"></script>
+<script src="./js/charts/bar.js"></script>
+  </body>
+</html>
